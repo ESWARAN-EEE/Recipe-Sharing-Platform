@@ -22,4 +22,4 @@
 ## 4. Multi-Language Recipe Translations
 
 - **Automatic translation**: Recipes can be shown in different languages for a wider audience.
-- **User-contributed translations**: Allow users to help translate recipes into their language.
+- **User-contributed translations**: Allow users to help translate recipes into the local languages they known.
