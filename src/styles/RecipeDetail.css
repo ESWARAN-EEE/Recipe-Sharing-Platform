@@ -1,0 +1,99 @@
+.recipe-detail {
+  /* background: url(../assets/valaielai.png); */
+  height:1000px ;
+  padding: 200px;
+  background-color: whitesmoke;
+  background-position: center;
+  background-size:cover ;
+  background-repeat: no-repeat;
+  background-attachment:fixed ;
+}
+
+.recipe-hero-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.recipe-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.recipe-meta {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.recipe-description {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.recipe-ingredients {
+  margin-bottom: 2rem;
+}
+
+.recipe-ingredients h2,
+.recipe-instructions h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.recipe-ingredients ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.recipe-instructions ol {
+  padding-left: 1.5rem;
+  counter-reset: step-counter;
+}
+
+.recipe-ingredients li,
+.recipe-instructions li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.recipe-instructions li {
+  counter-increment: step-counter;
+}
+
+/* .recipe-instructions li::before {
+  content: counter(step-counter) ".";
+  color: #007bff;
+  font-weight: bold;
+  margin-right: 0.5rem;
+} */
+@media (max-width: 768px) {
+  .recipes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .recipe-detail {
+    padding: 1rem;
+  }
+
+  .recipe-hero-image {
+    height: 250px;
+  }
+}
